@@ -18,6 +18,11 @@
 	padding-left: 10px
 }
 
+.tabela {
+	background-color: #FBFBFB;
+}
+
+ 
 
 .footer {
 	
@@ -238,7 +243,7 @@ body,
 }
 
 
-.menu a {
+.menu .alinhar a {
     text-decoration: none;
     display: block;
     padding: 35px;
@@ -253,20 +258,20 @@ body,
 
 
 
-.menu li {
+.menu .alinhar li {
     position: relative;
 	margin: 0;
 	
 	
 }
-.menu > li {
+.menu .alinhar > li {
     float: left;
 	margin: 0;
 }
-.menu > li:hover {
+.menu .alinhar > li:hover {
     background: #444;
 }
-.menu li:hover > .sub-menu {
+.menu .alinhar li:hover > .sub-menu {
     display: block;
 }
 .sub-menu {
@@ -275,7 +280,7 @@ body,
     min-width: 150px;
 }
 
-.sub-menu a {
+.alinhar .sub-menu a {
 	padding: 21px;
 }
 .sub-menu li:hover {
@@ -488,6 +493,7 @@ figcaption {
     font-size: 14px;
     text-transform: uppercase;
     font-weight: 700;
+	padding: 5px
 	
 	
 }
@@ -503,17 +509,18 @@ figcaption {
 .menurod > li:hover {
     background: #444;
 }
-.menurod li:hover > .sub-menu {
+.menurod li:hover > .sub-menurod {
     display: block;
 }
 .sub-menurod {
     display: none;
 	position: absolute;
     min-width: 150px;
+	background-color:#3D3A3A
 }
 
 .sub-menurod a {
-	padding: 21px;
+	padding: 6px;
 }
 .sub-menurod li:hover {
     background: #555;
@@ -529,10 +536,13 @@ figcaption {
 }
 
 .int img {
-	margin-bottom:25px;
+	margin-bottom:0px;
 	
 }
 
+.int em {
+	m
+}
 
 @media only screen and (max-width: 767px) {
 
