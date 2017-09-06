@@ -149,6 +149,79 @@ html[xmlns] .slides {
 	background-position: 0 -26px; 
 	cursor: default;
 }
+span {
+	background: #0190EE; 
+	cursor: pointer; 
+	opacity: 0;
+	filter:alpha(opacity=0); 
+	position: absolute; 
+	bottom: 40%; width: 43px; 
+	height: 43px; z-index: 5;
+}
+.next {
+	right: 10px;
+}
+.next:before,.next:after {
+	left: 21px;
+}
+.next:before {
+	-webkit-transform: rotate(-42deg);
+    top: 5px;
+}
+.next:after {
+    -webkit-transform: rotate(-132deg);
+    top: 19px;
+}
+.next:before,.next:after,.prev:before,.prev:after {
+	content: "";
+    height: 20px;
+    background: #fff;
+    width: 1px;
+    position: absolute;
+}
+.prev {
+	left: 10px;
+}
+.prev:before,.prev:after {
+	left: 18px;
+}
+.prev:before {
+    -webkit-transform: rotate(42deg);
+    top: 5px;
+}
+.prev:after {
+    -webkit-transform: rotate(132deg);
+    top: 19px;
+}
+
+figure:hover span {
+	opacity: 0.76;
+	filter:alpha(opacity=76);
+}
+    figure {
+    max-width: 937px;
+    height: 354px;
+    position: relative;
+    overflow: hidden;
+    margin: 50px auto;
+}
+
+figcaption {
+	padding-left: 20px;
+	color: #fff; 
+	font-family: "Kaushan Script","Lato","arial"; 
+	font-size: 22px; 
+	background: rgba(1, 144, 238, 0.76); 
+	width: 100%; 
+	position: absolute; 
+	bottom: 0; 
+	left: 0; 
+	line-height: 55px; 
+	height: 55px; 
+	z-index: 5
+}
+
+
 
 /* Media Queries
 /*-----------------------------------------------------------------------------------*/

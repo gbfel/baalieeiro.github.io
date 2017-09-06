@@ -63,10 +63,6 @@ p {
 	font-family: Arial, Helvetica, sans-serif;
 }
 
-.pwhite {
-	color: #FFFFFF;
-}
-
 p.last {
 	margin-bottom:0;
 }
@@ -97,6 +93,31 @@ strong {
 }
 small {
 	font-size: 80%;
+}
+.dimencao {
+	width: 960px;
+	margin: 0 auto;
+}
+.blankSeparator1 {	
+	height: 1px;
+	background-color:#006B2D;
+	display: block;
+	margin-bottom: 30px;
+}
+
+.sepContainer2 {
+	height: 4px;
+	background:#CCF8DF;
+	border-left:20px solid #006B2D;
+	display: block;
+	margin: 5px 0;
+	margin-bottom: 30px;
+}
+
+.blankSeparator2 {
+	height: 1px;
+	margin:10px 0;
+	display: block;
 }
 
 
