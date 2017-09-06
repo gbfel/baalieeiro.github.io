@@ -1,7 +1,9 @@
 @charset "utf-8";
 /* Autor: Gustavo Balieiro Felipe Ra 1520138 */
 
-
+* {
+	box-sizing: border-box;
+}
 
 
 .dimencao {
@@ -12,7 +14,7 @@
 
 
 .cont {
-	width: 300px;
+	width: 30%;
 	float:left;
 	margin: 0 auto;
 	padding-left: 10px
@@ -263,7 +265,7 @@ body,
 .menu .alinhar a {
     text-decoration: none;
     display: block;
-    padding: 35px;
+    padding: 35px 10px 35px 10px;
     color: #fff;
     font-family: sans-serif;
     font-size: 14px;
@@ -559,16 +561,30 @@ figcaption {
 
 
 
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 1000px) {
 
-.parceros, .tam_desta, .dimencao, .footer{
+ .tam_desta, .dimencao, .footer{
 width: 100%;
 }
-	
+.parceros {
+	width: 80%;
+	padding: 20px;
+}
+
 	.tabelareponsive {
 		max-width: 100%;
 		overflow: scroll;
 		
 	}
+
+	.menu .alinhar{
+    display: none;
+}
+
+.cont {
+	width: 100%;
+	margin: 0 auto;
+	padding-left: 10px
+}
 	
 }
