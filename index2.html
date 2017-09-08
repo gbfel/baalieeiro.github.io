@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head> 
+ 	<meta name="author" content="Yuri Dirickson-123456">
+<!-- AUTOR:
+Gustavo Balieiro 1520138
+Luan Millian Gonçalves
+ DATA = 29/08/2017-->
+<title>USF - Universidade São Francisco</title> 
+<meta charset="utf-8"/>
+</head>
+	
+	<!-- MediaQuery -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!-- /MediaQuery -->
+	
+	<!-- CSS's -->
+	<link rel="stylesheet" type="text/css" href="css/estilo.css">
+	<link rel="stylesheet" href="css/base.css">
+	<link rel="stylesheet" type="text/css" href="css/styles.css" media="all" />
+   
+    <!-- /CSS's -->
+  
+    <!-- Java Script -->
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
+    
+    
+    <!-- SLIDE -->
+    <script type="text/javascript" src="js/jquery.flexslider-min.js"></script>    
+    <script type="text/javascript" charset="utf-8">
+			
+		var $ = jQuery.noConflict();
+			$(window).load(function() {
+			$('.flexslider').flexslider({
+				  animation: "fade"
+			});
+
+			$(function() {
+				$('.show_menu').click(function(){
+						$('.menu').fadeIn();
+						$('.show_menu').fadeOut();
+						$('.hide_menu').fadeIn();
+				});
+				$('.hide_menu').click(function(){
+						$('.menu').fadeOut();
+						$('.show_menu').fadeIn();
+						$('.hide_menu').fadeOut();
+				});
+			});
+		  });
+	 	
+	</script>
+	
+	 <script>
+         $(function () {
+            $(".addfooter").load("footer.html");
+            $(".addheader").load("header.html");
+         });
+      </script>
+	<!-- SLIDE -->
+
+
+<body>
+
+
+<header>
+       
+       <div class="addheader"></div>
+       
+</header>			
+
+<footer>
+		<div class="addfooter"></div>
+         
+</footer>
+
+
+
+</body>
+
+</html>
