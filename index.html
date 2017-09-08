@@ -12,16 +12,22 @@ Luan Millian Gonçalves
 	
 	<!-- MediaQuery -->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
 	<!-- /MediaQuery -->
 	
 	<!-- CSS's -->
 	<link rel="stylesheet" type="text/css" href="css/estilo.css">
 	<link rel="stylesheet" href="css/base.css">
 	<link rel="stylesheet" type="text/css" href="css/styles.css" media="all" />
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/menuresponsivo.css">
     <!-- /CSS's -->
   
-   
+    <!-- Java Script -->
     <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+    <script src="js/menurepon.js"></script>
+    
     
     <!-- SLIDE -->
     <script type="text/javascript" src="js/jquery.flexslider-min.js"></script>    
@@ -49,13 +55,18 @@ Luan Millian Gonçalves
 	 	
 	</script>
 	<!-- SLIDE -->
+	<!-- /Java Script -->
 
 
 
 <body>
 
+
+	
+	
 <header>
        
+      
 	<div class="menu-container">
 				
 				
@@ -81,9 +92,47 @@ Luan Millian Gonçalves
 						<li><a href="noticias.html">Noticias</a></li>
 						<li><a href="contato.html">Contato</a></li>
 					</div>
-	 		</ul>	
+	 		</ul>
+	 		
+	 		 <nav class="menurepon menurepon-right" data-focus="#first-link">
+            <div class="menurepon-content">
+                <ul>
+                   <li class="menurepon-link"><a href="instituicao.html">Instituição</a></li>
+                   <li class="menurepon-submenu">
+                        <button id="first-link">Cursos</button>
+                        <ul>
+                            <li class="menurepon-link"><a href="#">Analise e Desenvolvimento de Sistema</a></li>
+                            <li class="menurepon-link"><a href="#">Administração</a></li>
+                            <li class="menurepon-link"><a href="#">Enfermagem</a></li>
+                            <li class="menurepon-link"><a href="#">Fisioterapia</a></li>
+                            <li class="menurepon-link"><a href="#">Odontologia</a></li>
+                        </ul>
+                    </li>
+                    <li class="menurepon-link"><a href="#">Estude na USF</a></li>
+                    <li class="menurepon-link"><a href="#">Noticias</a></li>
+                    <li class="menurepon-link"><a href="#">Contato</a></li>
+                                       
+                    
+                </ul>
+            </div>
+        </nav>
+
+      
+        <div class="site-overlay"></div>
+        
+		
+        <div id="container">
+           
+            <button class="menu-btn" style="font-size: 20px ">&#9776;</button>
+
+            
+        </div>
+       
+	 			
 			
 		</div>
+		
+		
 
 		<div class="container">
 
@@ -165,7 +214,7 @@ Luan Millian Gonçalves
 		  </div>
 	</div>
 
-	<div class="depoimentos dimencao">
+	<div class="depoimentos">
 		
 		<h2><strong>Depoimentos de Ex-Alunos</strong></h2>
 
@@ -190,7 +239,6 @@ Luan Millian Gonçalves
 
 <footer>
 		<div class="footer">
-            <div class="dimencao">
 				<div class="rod">
 					<h2><strong>SOBRE</strong></h2>
 					Na Universidade São Francisco (USF), o aluno conta com a tradição de uma instituição sólida no mercado educacional. São mais de 40 anos de atuação e 80 mil alunos formados. Presente nas cidades de Bragança Paulista, Campinas (Unidades Swift e Cambuí) e Itatiba, oferta mais de 30 cursos de graduação, 10 de pós-graduação, incluindo três programas de Mestrado e Doutorado.
@@ -238,10 +286,13 @@ Luan Millian Gonçalves
           		
            		
                     
-            </div>
             
-            <div class="copy"><center>
-					<div class="redes dimencao">
+            
+            
+         </div>
+         
+         <div class="copy">
+					<div class="redes">
 						<a href ="https://www.facebook.com/usfoficial" target="_blank"><img src="img/redes-sociais/facebook.png" alt="USF_Facebook"></a> 
 
 						<a href ="https://www.linkedin.com/edu/school?id=10725&trk=prof-following-school-logo" target="_blank"><img src="img/redes-sociais/linkedin.png" alt="USF_Linkedin"></a>
@@ -253,12 +304,11 @@ Luan Millian Gonçalves
 						<a href ="https://instagram.com/usfoficial"  target="_blank"><img src="img/redes-sociais/instagram.png" alt="USF_Instagram"></a> 
 						
 					</div>
-					</center>  
 				</div>
-            
-         </div>
          
 </footer>
+
+<script src="js/menurepon.js"></script>
 
 </body>
 
