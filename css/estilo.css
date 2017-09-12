@@ -120,7 +120,12 @@ section {
 	width: 33%;	
 	float:left;
 	margin: 0 auto;
-	padding-left: 15px
+	padding-left: 15px;
+		
+}
+.media {
+	margin: 35px 0 35px 0;
+	
 }
 .parceros {
 	position:relative;
@@ -420,6 +425,7 @@ footer {
 .footer {
 	padding: 20px
 }
+	.media iframe	{width: 100%}
 	
 		
 

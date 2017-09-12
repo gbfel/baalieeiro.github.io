@@ -211,6 +211,7 @@ figcaption {
 	z-index: 5
 }
 
+
 @media screen and (max-width: 1000px) {
 .slider_container{
 	width:100%; 

@@ -1,56 +1,57 @@
 <!DOCTYPE html>
 <html>
 <head> 
-<!-- AUTOR:
-Gustavo Balieiro 1520138
-Luan Millian Gonçalves
- DATA = 29/08/2017-->
-<title>USF</title> 
+ 	<meta name="author" content="Gustavo Balieiro-1520138">
+	<meta name="author" content="Luan Millian-123456">
+
+<title>USF - Universidade São Francisco</title> 
 <meta charset="utf-8"/>
 </head>
-
-<link rel="stylesheet" type="text/css" href="css/estilo.css">
-<link rel="stylesheet" href="css/base.css">
-<link rel="stylesheet" type="text/css" href="css/styles.css" media="all" />
-   
+	
+	<!-- MediaQuery -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+	<!-- /MediaQuery -->
+	
+	<!-- CSS's -->
+	<link rel="stylesheet" type="text/css" href="css/estilo.css">
+	<link rel="stylesheet" href="css/base.css">
+	<link rel="stylesheet" type="text/css" href="css/styles.css" media="all" />
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/menuresponsivo.css">
+    <!-- /CSS's -->
   
-    <!-- jQuery -->
-    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
-    <!-- FlexSlider -->
-    <script type="text/javascript" src="js/jquery.flexslider-min.js"></script>
-    
+    <!-- Java Script -->    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>    
+     
+   
+	
+	<!-- Adicionar HEADER e FOOTER-->
+	<script>
+	$(function() {
+		$(".addheader").load("header.html");
+		$(".addfooter").load("footer.html");
+	})
+	</script>
+	<!-- /Adicionar HEADER e FOOTER-->
+	
+	<!-- /Java Script -->
+
+
 
 <body>
- <header>
+
+	
+<header>
        
-		<div class="menu-container">
-				
-				
-				
-			<ul class="menu dimencaomenu">
-			 
-				<a href="index.html"><img src="img/logo-usf.png" alt="Logo" width="110"></a>
-					<div class="alinhar">
-							<li><a href="institucional.html">Institucional</a></li>
-							<li><a href="cursos.html">Cursos</a>
-								
-									<ul class="sub-menu">
-										<li><a href="ads.html">Analise e Desenvolvimento de sistema</a></li> 
-										<li><a href="adm.html">Administração</a></li> 
-										<li><a href="enfermagem.html">Enfermagem</a></li> 
-										<li><a href="fisioterapia.html">Fisioterapia</a></li> 
-										<li><a href="odontologia.html">Odontologia</a></li>                
+       <div class="addheader"></div>
 
-									</ul>
+			<div class="flexslider">
+				<ul class="slides">
 
-							 </li>
-						<li><a href="#">Estude na USF</a></li>
-						<li><a href="noticias.html">Noticias</a></li>
-						<li><a href="contato.html">Contato</a></li>
-					</div>
-	 		</ul>	
-			
-		</div>
+				</ul>
+			</div>
+		  
 </header> 
 <div class="container">
 			  
@@ -124,90 +125,14 @@ Luan Millian Gonçalves
   </div>
 </div>
 
-<!--<div class="parc dimencao">
-
-<a href ="http://sisfiesportal.mec.gov.br/"target="_blank"><img src="img/fies.jpg" alt="FIES"></a>
-<a href ="http://ruf.folha.uol.com.br/2016/perfil/universidade-sao-francisco-usf-670.shtml"target="_blank"><img src="img/+uni.jpg" alt="RANKING UNIVERSITÁRIO"></a>
-<a href ="https://www.microsoft.com/pt-br/education/imagine-academy/default.aspx"target="_blank"><img src="img/microsoft.jpg" alt="MICROSOFT"></a>
-<a href ="http://education.oracle.com/pls/web_prod-plq-dad/db_pages.getpage?page_id=691"target="_blank"><img src="img/oracle.jpg" alt="ORACLE"></a>
-<a href ="https://www.google.com.br/maps/place/Faculdade+Impacta+Tecnologia/@-23.5258552,-46.6515106,17z/data=!3m1!4b1!4m5!3m4!1s0x94ce5a36ed390d1b:0x774f96e1ad521edb!8m2!3d-23.5258552!4d-46.6493219"target="_blank"><img src="img/transporte.jpg" alt="TRANSPORTE"></a>
-</div>-->
 
 
-
-
-																														
-																																			 <footer>
-		<div class="footer">
-            <div class="dimencao">
-				<div class="rod">
-					<h2><strong>SOBRE</strong></h2>
-					Na Universidade São Francisco (USF), o aluno conta com a tradição de uma instituição sólida no mercado educacional. São mais de 40 anos de atuação e 80 mil alunos formados. Presente nas cidades de Bragança Paulista, Campinas (Unidades Swift e Cambuí) e Itatiba, oferta mais de 30 cursos de graduação, 10 de pós-graduação, incluindo três programas de Mestrado e Doutorado.
-				</div>
-        		<div class="rod">
-						<h2><strong>Navegação</strong></h2>
-
-						<ul class="menurod">
-
-							
-							<li><a href="institucional.html">Institucional</a></li>
-							<li><a href="cursos.html">Cursos</a>
-								
-									<ul class="sub-menurod">
-										<li><a href="ads.html">Analise e Desenvolvimento de sistema</a></li> 
-										<li><a href="adm.html">Administração</a></li> 
-										<li><a href="enfermagem.html">Enfermagem</a></li> 
-										<li><a href="fisioterapia.html">Fisioterapia</a></li> 
-										<li><a href="odontologia.html">Odontologia</a></li>                
-
-									</ul>
-
-							 </li>
-						<li><a href="#">Estude na USF</a></li>
-						<li><a href="noticias.html">Noticias</a></li>
-						<li><a href="contato.html">Contato</a></li>
-
-						</ul>	
-					
-				</div>
-          		
-          		<div class="rod">
-					<h2><strong>CONTATO:</strong></h2>
-					<strong>Comercial:</strong>
-					Tel: 11 3254-8300<BR>
-
-					<strong>Secretaria:</strong>
-					Tel: 11 5593-5346<BR><BR><BR>
-
-					Unidade - Barra Funda
-
-					Avenida Rudge, 315 - Barra Funda
-					São Paulo / SP<BR>
-				</div>
-          		
-           		
-                    
-            </div>
-            
-            <div class="copy"><center>
-					<div class="redes dimencao">
-						<a href ="https://www.facebook.com/usfoficial" target="_blank"><img src="img/redes-sociais/facebook.png" alt="USF_Facebook"></a> 
-
-						<a href ="https://www.linkedin.com/edu/school?id=10725&trk=prof-following-school-logo" target="_blank"><img src="img/redes-sociais/linkedin.png" alt="USF_Linkedin"></a>
-
-						<a href ="https://twitter.com/usfoficial" target="_blank"><img src="img/redes-sociais/twitter.png" alt="USF_Twitter"></a>
-
-						<a href ="http://www.youtube.com.br/mktusf" target="_blank"><img src="img/redes-sociais/youtube.png" alt="USF_Youtube"></a>
-
-						<a href ="https://instagram.com/usfoficial"  target="_blank"><img src="img/redes-sociais/instagram.png" alt="USF_Instagram"></a> 
-						
-					</div>
-					</center>  
-				</div>
-            
-         </div>
+<footer>
+	
+		<div class="addfooter"></div>
          
 </footer>
+
 
 </body>
 
