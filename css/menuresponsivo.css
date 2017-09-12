@@ -5,11 +5,6 @@
   padding: 0;
 
 }
-/*! menurepon - v1.1.0 - 2017-1-30
-* menurepon is a responsive off-canvas navigation menu using CSS transforms & transitions.
-* https://github.com/christophery/menurepon/
-* by Christopher Yee */
-/* Menu Appearance */
 
 #container {
   position: relative;
@@ -41,7 +36,7 @@
   opacity: 0.8;
 }
 
-/* Header */
+
 .site-header {
   position: fixed;
   background: #000;
@@ -52,7 +47,7 @@
   z-index: 9999;
 }
 
-/* Footer */
+
 .site-footer {
   position: relative;
   border-top: 1px solid #EEE;
@@ -62,7 +57,7 @@
   text-align: center;
 }
 	
-/*** ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+
 	
 	.menurepon {
   display: block;
@@ -73,10 +68,8 @@
   z-index: 9999;
   background: #191918;
   overflow: auto;
-  -webkit-overflow-scrolling: touch;
-	
-  /* enables momentum scrolling in iOS overflow elements */
-}
+-webkit-overflow-scrolling: touch;	
+ }
 .menurepon a {
   display: block;
   color: #b3b3b1;
@@ -101,7 +94,7 @@
   visibility: hidden;
 }
 
-/* Menu Movement */
+
 .menurepon-left {
   -webkit-transform: translate3d(-200px, 0, 0);
   -ms-transform: translate3d(-200px, 0, 0);
@@ -139,7 +132,7 @@
   visibility: visible;
 }
 
-/* Menu Transitions */
+
 #container,
 .menurepon,
 .push {
@@ -150,7 +143,7 @@
   transition: visibility 0.2s cubic-bezier(0.16, 0.68, 0.43, 0.99);
 }
 
-/* Site Overlay */
+
 .site-overlay {
   display: none;
 }
@@ -185,11 +178,9 @@
     opacity: 1;
   }
 }
-/* Submenu Appearance */
+
 .menurepon-submenu {
-  /* Submenu Buttons */
-  /* Submenu Icon */
-}
+	}
 .menurepon-submenu ul {
   padding-left: 15px;
   transition: max-height 0.2s ease-in-out, visibility 0.2s ease-in-out;
@@ -228,7 +219,7 @@
   transition: transform 0.2s;
 }
 
-/* Submenu Movement */
+
 .menurepon-submenu-closed ul {
   max-height: 0;
   overflow: hidden;
@@ -239,7 +230,7 @@
 }
 
 .menurepon-submenu-open {
-  /* Submenu Icon */
+
 }
 .menurepon-submenu-open ul {
   max-height: 1000px;
@@ -254,12 +245,3 @@
   -ms-transform: translateY(-50%) rotate(90deg);
   transform: translateY(-50%) rotate(90deg);
 }
-
-/*# sourceMappingURL=menurepon.css.map */
-
-
-
-
-}
-
-
