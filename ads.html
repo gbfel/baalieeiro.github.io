@@ -9,123 +9,247 @@ Luan Millian Gonçalves
 <meta charset="utf-8"/>
 </head>
 
-<link rel="stylesheet" type="text/css" href="css/estilo.css">
-<link rel="stylesheet" href="css/base.css">
-<link rel="stylesheet" type="text/css" href="css/styles.css" media="all" />
-   
+	<link rel="stylesheet" type="text/css" href="css/estilo.css">
+	<link rel="stylesheet" href="css/base.css">
+	<link rel="stylesheet" type="text/css" href="css/styles.css" media="all" />
+  
+   	<link rel="stylesheet" href="css/cont-cursos.css">
   
     <!-- jQuery -->
-    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
-    <!-- FlexSlider -->
-    <script type="text/javascript" src="js/jquery.flexslider-min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script> 
     
+	<!-- Adicionar HEADER e FOOTER-->
+	<script>
+	$(function() {
+		$(".addheader").load("header.html");
+		$(".addfooter").load("footer.html");
+	})
+	</script>
+	<!-- /Adicionar HEADER e FOOTER-->
+	
+	<!-- Efeito de toggle mostrar e esconder -->
+	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8/jquery.min.js"></script>
+<!-- Script JQuery Toggle -->
+<script type='text/javascript'>
+$(document).ready(function()
+{
+$(".mostrar").hide();
+$(".semestre").click(function()
+{
+$(this).next(".mostrar").slideToggle(600);
+});
+});
+</script>
+<!-- Fim Script JQuery Toggle -->
+
+	
+	<!-- /Efeito de toggle mostrar e esconder -->
+	
+	<!-- /Java Script -->
+
+		
 
 <body>
- <header>
+
+	
+<header>
        
-		<div class="menu-container">
-				
-				
-				
-			<ul class="menu dimencaomenu">
-			 
-				<a href="index.html"><img src="img/logo-usf.png" alt="Logo" width="110"></a>
-					<div class="alinhar">
-							<li><a href="institucional.html">Institucional</a></li>
-							<li><a href="cursos.html">Cursos</a>
-								
-									<ul class="sub-menu">
-										<li><a href="ads.html">Analise e Desenvolvimento de sistema</a></li> 
-										<li><a href="adm.html">Administração</a></li> 
-										<li><a href="enfermagem.html">Enfermagem</a></li> 
-										<li><a href="fisioterapia.html">Fisioterapia</a></li> 
-										<li><a href="odontologia.html">Odontologia</a></li>                
-
-									</ul>
-
-							 </li>
-						<li><a href="#">Estude na USF</a></li>
-						<li><a href="noticias.html">Noticias</a></li>
-						<li><a href="contato.html">Contato</a></li>
-					</div>
-	 		</ul>	
-			
-		</div>
+       <div class="addheader"></div>
+		
 </header> 
-<div class="container">
-			  
-     <div class="slider_container">
-		<div class="flexslider">
-	    	<ul class="slides">
-	    		
-	    		<li>
-	    		<a href="#"><img src="images/slider/slide1.jpg" alt="" title=""/></a>
-	    			<div class="caixa">
-						 <div class="titulo">
-						 <h2>Administração</h2><p>Find the perfect hairstyle a la Lauren Conrad for every type of festive fête.</p>
-						 </div>
-                	</div>
-	    		</li>
-	    	
-	    		<li>
-	    		<a href="#"><img src="images/slider/slide2.jpg" alt="" title=""/></a>
-	    			<div class="caixa">
-                    	 <div class="titulo">
-                    	 <h2>Nutrição</h2><p>The latest hairstyles and instructions on how to create them here. Total Beauty has your complete hairstyles guide</p></div>
-                		 </div>
-	    		</li>
-	    		
-	    	</ul>
-	  	</div>
-  	 </div>
-</div>  
 
-   
-<div class="section dimencao">
+ 
+ <div class="img_cursos">
+			<img src="img/cursos/ads.jpg">
+		</div>
+ <section> 
 
-	<div class="int">
-		<center><img src="img/usf.jpg" alt="USF"></center>
-		<h2><strong>ANÁLISE E DESENVOLVIMENTO DE SISTEMAS</strong> </h2>
-		<p> O curso forma profissionais conhecidos como Analista de Sistemas ou Desenvolvedor de Sistemas.  São esses profissionais que criam os sistemas com os quais você já teve contato: sistemas de comércio eletrônico, sistemas de redes sociais, web sites, apenas para citar alguns.</p>
+		<div class="conteudo_cur">
+		
+		
+
+	<p><h2><strong>SOBRE O CURSO</strong> </h2>
+	<div class="sepContainer2"></div>
+		<p> O curso forma profissionais conhecidos como <b>Analista de Sistemas ou Desenvolvedor de Sistemas.</b>  São esses profissionais que criam os sistemas com os quais você já teve contato: sistemas de comércio eletrônico, sistemas de redes sociais, web sites, apenas para citar alguns.</p>
  
 		<p> Que tal fazer parte desse grupo seleto de profissionais? O melhor caminho para isso é aprender de forma gradativa, resolvendo problemas do simples ao complexo, participando ativamente de projetos reais com clientes reais, além de ter como professores os melhores profissionais de mercado.</p>
 
 		<p>Você também aprenderá a trabalhar em equipe, analisando e desenvolvendo sistemas para internet, tablets, celulares e Internet das Coisas (IoT), utilizando ambientes DevOps, linguagens e tecnologias de alta-produtividade e de melhor custo-benefício </p>
+</p>
+	 
+	 <div class="info_curso">
+		 <div class="img_curso_desc">
+			<img src="img/cursos/relogio.png">
+		 </div>
+				<div class="text">
+					<p>
+						Periodo:<br>
+					 <b>Noturno</b>
+					 
+					</p>
+		 </div>
+	 </div>
+	 
+	 <div class="info_curso">
+		 <div class="img_curso_desc">
+			<img src="img/cursos/calendario.png">
+		 </div>
+				<div class="text">
+					<p>
+						Duração:<br>
+					 <b>8 semestres</b>
+					 
+					</p>
+				</div>
+		 </div>
+	 </div>
+	 		
+	 		
+	
+
 
 		
-
-<p>Confira no arquivo em PDF a relação das disciplinas ofertadas para este curso e seu respectivo corpo docente:</p>
-
-
-<a href ="pdf/grade_ads.pdf" target="_blank">Grade e Corpo Docente - ADS USF | Atualizado em 30/06/17 </a> 
-<br /><br />
-<p>Ou <a href="detalhe_adm.html">Click aqui</a> </p>
-
+		<div class="conteudo_cur">
 		
-	</div>
+		
 
-</div>
+	<p><h2><strong>QUERO MAIS INFORMAÇÕES</strong> </h2>
+	<div class="sepContainer2"></div>
+		
+</p>
+		<div class="form-grop">
+		<form class="maisinfo">
+			<label class="text-info">Nome*</label>
+			<input type="text" class="form-control" placeholder="Insira seu nome" required>
+		</form>
+		</div>
+		
+		<div class="form-grop">
+		<form class="maisinfo">
+			<label class="text-info">E-mail*</label>
+			<input type="email" class="form-control" placeholder="Insira seu e-mail" required>
+		</form>
+		</div>
+		
+		<div class="form-grop">
+		<form class="maisinfo">
+			<label class="text-info">Telefone*</label>
+			<input type="email" class="form-control" placeholder="(##) #####-####" required>
+		</form>
+		</div>
+		
+		<button type="button" class="bnt-info">Enviar</button>
 
-
-
-<div class="dimencao parceros">
+		</div>
+		
+				
+		<div class="grade">
+		<div class="semestre">
+ 		01º Semestre </div>
+		<div class="mostrar">
+		<div class="col-grade">Comunicação e Expressão</div>
+		<div class="col-grade">Fundamentos da Administração</div>
+		<div class="col-grade">Macroeconomia</div>
+		<div class="col-grade">Modelos de Negócios e Empreendedorismo</div>
+		<div class="col-grade">Pensamento Crítico e Ética</div>
+		</div>
+		</div>
+		
+		<div class="grade">
+		<div class="semestre">
+ 		02º Semestre </div>
+		<div class="mostrar">
+		<div class="col-grade">Comunicação e Expressão</div>
+		<div class="col-grade">Fundamentos da Administração</div>
+		<div class="col-grade">Macroeconomia</div>
+		<div class="col-grade">Modelos de Negócios e Empreendedorismo</div>
+		<div class="col-grade">Pensamento Crítico e Ética</div>
+		</div>
+		</div>
+		
+		<div class="grade">
+		<div class="semestre">
+ 		03º Semestre </div>
+		<div class="mostrar">
+		<div class="col-grade">Comunicação e Expressão</div>
+		<div class="col-grade">Fundamentos da Administração</div>
+		<div class="col-grade">Macroeconomia</div>
+		<div class="col-grade">Modelos de Negócios e Empreendedorismo</div>
+		<div class="col-grade">Pensamento Crítico e Ética</div>
+		</div>
+		</div>
+		
+		<div class="grade">
+		<div class="semestre">
+ 		04º Semestre </div>
+		<div class="mostrar">
+		<div class="col-grade">Comunicação e Expressão</div>
+		<div class="col-grade">Fundamentos da Administração</div>
+		<div class="col-grade">Macroeconomia</div>
+		<div class="col-grade">Modelos de Negócios e Empreendedorismo</div>
+		<div class="col-grade">Pensamento Crítico e Ética</div>
+		</div>
+		</div>
+		
+		<div class="grade">
+		<div class="semestre">
+ 		05º Semestre </div>
+		<div class="mostrar">
+		<div class="col-grade">Comunicação e Expressão</div>
+		<div class="col-grade">Fundamentos da Administração</div>
+		<div class="col-grade">Macroeconomia</div>
+		<div class="col-grade">Modelos de Negócios e Empreendedorismo</div>
+		<div class="col-grade">Pensamento Crítico e Ética</div>
+		</div>
+		</div>
+			
+		<div class="grade">
+		<div class="semestre">
+ 		06º Semestre </div>
+		<div class="mostrar">
+		<div class="col-grade">Comunicação e Expressão</div>
+		<div class="col-grade">Fundamentos da Administração</div>
+		<div class="col-grade">Macroeconomia</div>
+		<div class="col-grade">Modelos de Negócios e Empreendedorismo</div>
+		<div class="col-grade">Pensamento Crítico e Ética</div>
+		</div>
+		</div>
+		
+		<div class="grade">
+		<div class="semestre">
+ 		07º Semestre </div>
+		<div class="mostrar">
+		<div class="col-grade">Comunicação e Expressão</div>
+		<div class="col-grade">Fundamentos da Administração</div>
+		<div class="col-grade">Macroeconomia</div>
+		<div class="col-grade">Modelos de Negócios e Empreendedorismo</div>
+		<div class="col-grade">Pensamento Crítico e Ética</div>
+		</div>
+		</div>
+		
+		<div class="grade">
+		<div class="semestre">
+ 		08º Semestre </div>
+		<div class="mostrar">
+		<div class="col-grade">Comunicação e Expressão</div>
+		<div class="col-grade">Fundamentos da Administração</div>
+		<div class="col-grade">Macroeconomia</div>
+		<div class="col-grade">Modelos de Negócios e Empreendedorismo</div>
+		<div class="col-grade">Pensamento Crítico e Ética</div>
+		</div>
+		</div>
  
- <div class="parc-marg">
-  <h2><strong>PARCEIROS E DIFERENCIAIS:</strong></h2>
-  <div class="tam_desta"> <a href="http://www.creditouniversitario.com.br" target="_self"><img src="img/pravaler.jpg" alt="Parceiro Pravaler" title="Pravaler"/></a> </div>
-  
-  <div class="tam_desta"> <a href="http://sisfiesportal.mec.gov.br/" target="_self"><img src="img/fies.jpg" alt="Parceiro FIES" title="FIES"/></a> </div>
-  
-  <div class="tam_desta"> <a href="http://www.creditouniversitario.com.br" target="_self"><img src="img/pravaler.jpg" alt="Parceiro Pravaler" title="Pravaler"/></a> </div>
-  
-  <div class="tam_desta"> <a href="http://sisfiesportal.mec.gov.br/" target="_self"><img src="img/fies.jpg" alt="Parceiro FIES" title="FIES"/></a> </div>
-  
-  <div class="tam_desta"> <a href="http://www.creditouniversitario.com.br" target="_self"><img src="img/pravaler.jpg" alt="Parceiro Pravaler" title="Pravaler"/></a> </div>
-  
-  <div class="tam_desta"> <a href="http://sisfiesportal.mec.gov.br/" target="_self"><img src="img/fies.jpg" alt="Parceiro FIES" title="FIES"/></a> </div>
-  
-  </div>
-</div>
+	
+
+	
+	
+	
+</section>  
+
+
+
+
+
 
 <footer>
 	

@@ -5,6 +5,10 @@
   padding: 0;
 
 }
+.menurepon {
+	width: 200px;
+	float: right
+}
 
 #container {
   position: relative;
@@ -12,8 +16,7 @@
   padding-top: 80px;
 }
 .menu-btn {display: none}
-.menurepon {display: none}
-
+.menurepon {display:none}
 
 @media Only screen and (max-width:1000px) {
 .menu-btn {
@@ -156,7 +159,7 @@
   right: 0;
   bottom: 0;
   left: 0;
-  z-index: 9998;
+ z-index: 9998;	
   background-color: rgba(0, 0, 0, 0.5);
   -webkit-animation: fade 500ms;
   animation: fade 500ms;

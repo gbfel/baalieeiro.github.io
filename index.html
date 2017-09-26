@@ -22,13 +22,16 @@
     <!-- /CSS's -->
   
     <!-- Java Script -->    
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
      
     
     <!-- SLIDE -->
     <script type="text/javascript" src="js/jquery.flexslider-min.js"></script>    
     <script type="text/javascript" charset="utf-8">
-			
+				$(function() {
+		$(".addheader").load("header.html");
+		$(".addfooter").load("footer.html");
+	});
 		var $ = jQuery.noConflict();
 			$(window).load(function() {
 			$('.flexslider').flexslider({
@@ -48,17 +51,15 @@
 				});
 			});
 		  });
-	 	
+	 		
+
 	</script>
+	
+	
 	<!-- SLIDE -->
 	
 	<!-- Adicionar HEADER e FOOTER-->
-	<script>
-	$(function() {
-		$(".addheader").load("header.html");
-		$(".addfooter").load("footer.html");
-	})
-	</script>
+	
 	<!-- /Adicionar HEADER e FOOTER-->
 	
 	<!-- /Java Script -->
@@ -72,7 +73,138 @@
 	
 <header>
        
-       <div class="addheader"></div>
+   <div class="menu-container">
+				
+			<ul class="menu">
+			 
+				<div class="logotop">
+					<li><a href="index.html"><img src="img/logo-usf.png" alt="Logo" width="110"></a></li>
+				</div>
+						
+							<div class="alinhar">
+							<li><a href="institucional.html">Institucional</a></li>
+							<li><a href="cursos.html">Cursos</a>
+								
+									<ul class="sub-menu">
+										<li><a href="ads.html">Analise e Desenvolvimento de sistema</a></li> 
+										<li><a href="adm.html">Administração</a></li> 
+										<li><a href="enfermagem.html">Enfermagem</a></li> 
+										<li><a href="fisioterapia.html">Fisioterapia</a></li> 
+										<li><a href="odontologia.html">Odontologia</a></li>                
+
+									</ul>
+
+							 </li>
+						<li><a href="#">Estude na USF</a></li>
+						<li><a href="noticias.html">Noticias</a></li>
+						<li><a href="contato.html">Contato</a></li>
+						
+					
+					</div>
+					
+					
+				
+	 		</ul>
+	 		
+	 		<ul class="menuadd">
+            	
+            		<a href="#autenticação"><img class="imglog" src="img/autenticacao-login.png" alt="autenticação"></a>
+						
+						<div id="autenticação" class="lightbox">
+							
+							<form class="dados">
+							<a class="close" href="#">&#10006;</a> 
+								<input class="itemflex" name="id" placeholder="Registro do Aluno"/>
+								<input class="itemflex" type="password" placeholder="Senha"  />
+							
+
+								
+								<form class="autenticacao">
+										<button class="itemflex bnt" id="botaolg" type="button" maxlength="2">Login</button>     		
+										<a class="itemflex1" href="remember.html">Esqueceu a senha?</a>
+										
+									</form>
+
+								
+							</form>
+
+						</div>	
+        
+
+								
+            	
+            </ul>
+	 		
+	 		
+	 		<nav class="menurepon menurepon-right" data-focus="#first-link">
+            <div class="menurepon-content">
+                <ul>
+                   <li class="menurepon-link"><a href="instituicao.html">Instituição</a></li>
+                   <li class="menurepon-submenu">
+                        <button id="first-link">Cursos</button>
+                        <ul>
+                            <li class="menurepon-link"><a href="#">Analise e Desenvolvimento de Sistema</a></li>
+                            <li class="menurepon-link"><a href="#">Administração</a></li>
+                            <li class="menurepon-link"><a href="#">Enfermagem</a></li>
+                            <li class="menurepon-link"><a href="#">Fisioterapia</a></li>
+                            <li class="menurepon-link"><a href="#">Odontologia</a></li>
+                        </ul>
+                    </li>
+                    <li class="menurepon-link"><a href="#">Estude na USF</a></li>
+                    <li class="menurepon-link"><a href="#">Noticias</a></li>
+                    <li class="menurepon-link"><a href="#">Contato</a></li>
+                    <li class="loginrespon">
+                        
+                        
+                         
+						                          
+							
+							<form class="dados"> 
+								<input class="itemflex" name="id" placeholder="Registro do Aluno"/><br><br>
+								<input class="itemflex" type="password" placeholder="Senha"  />
+							
+
+								
+								<form class="autenticacao">
+										<button class="itemflex bnt" type="button" maxlength="2">Login</button>     		
+										<a class="itemflex1" href="remember.html">Esqueceu a senha?</a>
+										
+									</form>
+
+								
+							</form>
+					</li>
+							
+        
+
+								
+            	
+                        </ul>
+                        
+                                       
+                
+            </div>
+            
+            
+            
+        </nav>
+
+      
+        <div class="site-overlay"></div>
+        
+		
+        <div id="container">
+           
+            <button class="menu-btn" style="font-size: 20px ">&#9776;</button>
+
+            
+        </div>
+        
+        
+        
+      
+	 		
+	</div>
 	
 	 		
 
@@ -86,7 +218,7 @@
 					<a href="#"><img src="images/slider/slide1.jpg" alt="" title=""/></a>
 						<div class="caixa">
 							 <div class="titulo">
-							 <h2>Administração</h2><p>Find the perfect hairstyle a la Lauren Conrad for every type of festive fête.</p>
+							 <h2>Administração</h2><p> Seja mais do que somente mais um administrador do mercado. Faça um curso reconhecido pelo MEC com conceito máximo </p>
 							 </div>
 						</div>
 					</li>
@@ -95,7 +227,7 @@
 					<a href="#"><img src="images/slider/slide2.jpg" alt="" title=""/></a>
 						<div class="caixa">
 							 <div class="titulo">
-							 <h2>Nutrição</h2><p>The latest hairstyles and instructions on how to create them here. Total Beauty has your complete hairstyles guide</p></div>
+							 <h2>Nutrição</h2><p>O curso de nutrição da universidade paulista tem como objetivos formar nutricionistas com conhecimentos, competências e habilidades</p></div>
 							 </div>
 					</li>
 
@@ -120,6 +252,8 @@
 				A USF integra o seleto grupo das Instituições Comunitárias de Ensino Superior (ICES) do Brasil, participando também da Associação Brasileira das Universidades Comunitárias (ABRUC), que reúne 66 Instituições, que apresentam conceitos de 3 a 5 no Índice Geral de Cursos da Instituição (IGC), do Ministério da Educação (MEC).</p>
 			</div>
 
+
+		
 			<div class="box">	
 				<p><h2><strong>Missão</strong></h2>	
 
@@ -185,10 +319,8 @@
          
 </footer>
 
-<script src="js/menurepon.js"></script>
-
 </body>
 
-
+<script src="js/menurepon.js"></script>
 
 </html>
