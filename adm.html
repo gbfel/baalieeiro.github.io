@@ -1,10 +1,11 @@
 <!DOCTYPE html>
 <html>
 <head> 
- 	<meta name="author" content="Gustavo Balieiro-1520138">
-	<meta name="author" content="Luan Millian-123456">
-
-<title>USF - Universidade São Francisco</title> 
+<!-- AUTOR:
+Gustavo Balieiro 1520138
+Luan Millian Gonçalves
+ DATA = 29/08/2017-->
+<title>USF</title> 
 <meta charset="utf-8"/>
 </head>
 	
@@ -12,20 +13,16 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
 	<!-- /MediaQuery -->
-	
-	<!-- CSS's -->
+
 	<link rel="stylesheet" type="text/css" href="css/estilo.css">
 	<link rel="stylesheet" href="css/base.css">
 	<link rel="stylesheet" type="text/css" href="css/styles.css" media="all" />
-    <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/menuresponsivo.css">
-    <!-- /CSS's -->
   
-    <!-- Java Script -->    
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>    
-     
-   
-	
+   	<link rel="stylesheet" href="css/cont-cursos.css">
+  
+    <!-- jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script> 
+    
 	<!-- Adicionar HEADER e FOOTER-->
 	<script>
 	$(function() {
@@ -35,9 +32,27 @@
 	</script>
 	<!-- /Adicionar HEADER e FOOTER-->
 	
+	<!-- Efeito de toggle mostrar e esconder -->
+	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8/jquery.min.js"></script>
+<!-- Script JQuery Toggle -->
+		<script>
+		$(document).ready(function()
+		{
+		$(".mostrar").hide();
+		$(".semestre").click(function()
+		{
+		$(this).next(".mostrar").slideToggle(600);
+		});
+		});
+		</script>
+<!-- Fim Script JQuery Toggle -->
+
+	
+	<!-- /Efeito de toggle mostrar e esconder -->
+	
 	<!-- /Java Script -->
 
-
+		
 
 <body>
 
@@ -45,86 +60,208 @@
 <header>
        
        <div class="addheader"></div>
-
-			<div class="flexslider">
-				<ul class="slides">
-
-				</ul>
-			</div>
-		  
+		
 </header> 
-<div class="container">
-			  
-     <div class="slider_container">
-		<div class="flexslider">
-	    	<ul class="slides">
-	    		
-	    		<li>
-	    		<a href="#"><img src="images/slider/slide1.jpg" alt="" title=""/></a>
-	    			<div class="caixa">
-						 <div class="titulo">
-						 <h2>Administração</h2><p>Find the perfect hairstyle a la Lauren Conrad for every type of festive fête.</p>
-						 </div>
-                	</div>
-	    		</li>
-	    	
-	    		<li>
-	    		<a href="#"><img src="images/slider/slide2.jpg" alt="" title=""/></a>
-	    			<div class="caixa">
-                    	 <div class="titulo">
-                    	 <h2>Nutrição</h2><p>The latest hairstyles and instructions on how to create them here. Total Beauty has your complete hairstyles guide</p></div>
-                		 </div>
-	    		</li>
-	    		
-	    	</ul>
-	  	</div>
-  	 </div>
-</div>  
 
-   
-<div class="section dimencao">
-
-	<div class="int">
-		<center><img src="img/usf.jpg" alt="USF"></center>
-		<h2><strong>ADMINISTRAÇÃO</strong> </h2>
-		<p> No campus de Bragança Paulista, o curso de Administração foi autorizado há mais de trinta anos e está devidamente reconhecido pelo MEC. Desde seu início, foi criado para oferecer, através do bacharelado, formação plena nas ciências gerenciais aos interessados, cujas competências e habilidades são gradativamente desenvolvidas a fim de inseri-los efetivamente no mercado de trabalho.</p>
-
-		<p>Durante o curso, você aprende a ter autonomia intelectual, atitude investigativa e posicionamento crítico para gerar soluções estratégicas que contribuam para os processos administrativos de diferentes organizações. Além do trabalho em empresas, as atividades de iniciação científica e monitoria também podem ser uma opção, uma vez que você pode iniciar sua formação acadêmica para atuar, futuramente, como professor ou pesquisador. Aliadas a essa estrutura curricular diferenciada, ainda estão palestras ministradas por profissionais já atuantes na área e a Semana Empresarial, durante a qual há cursos, seminários e apresentações dos alunos.</p>
-
-		<p>Disciplinas instrumentas, mercadológicas, humanas e outras complementam o curso, que propicia uma sólida formação em administração geral, finanças e operações, articulando, constantemente, a teoria à prática. Por meio de convênios com empresas da região, também são oferecidas oportunidades para estágio e cumprimento de atividades complementares a nossos alunos, que, depois de graduados, poderão dar continuidade a seus estudos através do MBA em Gestão de Negócios. </p>
-
-		
-
-<p>Confira no arquivo em PDF a relação das disciplinas ofertadas para este curso e seu respectivo corpo docente:</p>
-
-<a href ="pdf/grade_adm.pdf" target="_blank">Grade e Corpo Docente - ADM USF | Atualizado em 30/06/17 </a><br /><br />
-<p>Ou <a href="detalhe_adm.html">Click aqui</a> </p>
-
-		
-	</div>
-
-</div>
-
-
-
-<div class="dimencao parceros">
  
- <div class="parc-marg">
-  <h2><strong>PARCEIROS E DIFERENCIAIS:</strong></h2>
-  <div class="tam_desta"> <a href="http://www.creditouniversitario.com.br" target="_self"><img src="img/pravaler.jpg" alt="Parceiro Pravaler" title="Pravaler"/></a> </div>
-  
-  <div class="tam_desta"> <a href="http://sisfiesportal.mec.gov.br/" target="_self"><img src="img/fies.jpg" alt="Parceiro FIES" title="FIES"/></a> </div>
-  
-  <div class="tam_desta"> <a href="http://www.creditouniversitario.com.br" target="_self"><img src="img/pravaler.jpg" alt="Parceiro Pravaler" title="Pravaler"/></a> </div>
-  
-  <div class="tam_desta"> <a href="http://sisfiesportal.mec.gov.br/" target="_self"><img src="img/fies.jpg" alt="Parceiro FIES" title="FIES"/></a> </div>
-  
-  <div class="tam_desta"> <a href="http://www.creditouniversitario.com.br" target="_self"><img src="img/pravaler.jpg" alt="Parceiro Pravaler" title="Pravaler"/></a> </div>
-  
-  <div class="tam_desta"> <a href="http://sisfiesportal.mec.gov.br/" target="_self"><img src="img/fies.jpg" alt="Parceiro FIES" title="FIES"/></a> </div>
-  
-  </div>
-</div>
+ <div class="img_cursos">
+			<img src="img/cursos/adm.png">
+		</div>
+ <section> 
+
+		<div class="conteudo_cur">
+		
+		
+
+	<p><h2><strong>SOBRE O CURSO</strong> </h2>
+	<div class="sepContainer2"></div>
+		<p>A <b>Graduação em Administração</b> te preparara para ser um profissional completo e com as habilidades que o mercado de trabalho procura. Você será capaz de administrar, empreender, desenvolver e planejar ações, adquirindo conhecimentos estratégicos em conjunto com as novas tecnologias.</p>
+ 
+		<p>O curso te habilita para o cenário real de gestão e liderança empresarial, garantindo a capacidade de comunicação e criatividade para solucionar problemas, atingir os melhores resultados, aumentar a produtividade e reduzir custos.</p>
+
+	
+</p>
+	 
+	 <div class="info_curso">
+		 <div class="img_curso_desc">
+			<img src="img/cursos/relogio.png">
+		 </div>
+				<div class="text">
+					<p>
+						Periodo:<br>
+					 <b>Noturno</b>
+					 
+					</p>
+		 </div>
+	 </div>
+	 
+	 <div class="info_curso">
+		 <div class="img_curso_desc">
+			<img src="img/cursos/calendario.png">
+		 </div>
+				<div class="text">
+					<p>
+						Duração:<br>
+					 <b>8 semestres</b>
+					 
+					</p>
+				</div>
+		 </div>
+	 </div>
+	 		
+	 		
+	
+
+
+		
+		<div class="conteudo_cur">
+		
+		
+
+	<p><h2><strong>QUERO MAIS INFORMAÇÕES</strong> </h2>
+	<div class="sepContainer2"></div>
+		
+</p>
+		<div class="form-grop">
+		<form class="maisinfo">
+			<label class="text-info">Nome*</label>
+			<input type="text" class="form-control" placeholder="Insira seu nome" required>
+		</form>
+		</div>
+		
+		<div class="form-grop">
+		<form class="maisinfo">
+			<label class="text-info">E-mail*</label>
+			<input type="email" class="form-control" placeholder="Insira seu e-mail" required>
+		</form>
+		</div>
+		
+		<div class="form-grop">
+		<form class="maisinfo">
+			<label class="text-info">Telefone*</label>
+			<input type="email" class="form-control" placeholder="(##) #####-####" required>
+		</form>
+		</div>
+		
+		<button type="button" class="bnt-info">Enviar</button>
+
+		</div>
+		
+				
+		<div class="grade">
+		<div class="semestre">
+ 		01º Semestre </div>
+		<div class="mostrar">
+		<div class="col-grade"><p>Comunicação e Expressão</p></div>
+		<div class="col-grade"><p>Fundamentos da Administração</p></div>
+		<div class="col-grade"><p>Macroeconomia</p></div>
+		<div class="col-grade"><p>Modelos de Negócios e Empreendedorismo</p></div>
+		<div class="col-grade"><p>Pensamento Crítico e Ética</p></div>
+		</div>
+		</div>
+				
+		
+		<div class="grade">
+		<div class="semestre">
+ 		02º Semestre </div>
+		<div class="mostrar">
+		<div class="col-grade"><p>Análise Exploratória de Dados</p></div>
+		<div class="col-grade"><p>Cálculo</p></div>
+		<div class="col-grade"><p>Contabilidade Financeira</p></div>
+		<div class="col-grade"><p>Língua Brasileira de Sinais - LIBRAS (Optativa)</p></div>
+		<div class="col-grade"><p>Microeconomia</p></div>
+		<div class="col-grade"><p>Raciocínio Analítico</p></div>
+		<div class="col-grade"><p>Sociedade e Sustentabilidade (Optativa)</p></div>
+		<div class="col-grade"><p>Sociologia e Política</p></div>
+		</div>
+		</div>
+		
+	
+		<div class="grade">
+		<div class="semestre">
+ 		03º Semestre </div>
+		<div class="mostrar">
+		<div class="col-grade"><p>Comportamento Organizacional</p></div>
+		<div class="col-grade"><p>Contabilidade Gerencial</p></div>
+		<div class="col-grade"><p>Gestão de Projetos e Programas</p></div>
+		<div class="col-grade"><p>Inteligência de Negócios</p></div>
+		<div class="col-grade"><p>Matemática Financeira</p></div>
+		<div class="col-grade"><p>Modelagem de Processos de Negócio</p></div>
+		</div>
+		</div>
+		
+		<div class="grade">
+		<div class="semestre">
+ 		04º Semestre </div>
+		<div class="mostrar">
+		<div class="col-grade"><p>Administração Financeira</p></div>
+		<div class="col-grade"><p>Estratégia Organizacional</p></div>
+		<div class="col-grade"><p>Gestão de Marketing</p></div>
+		<div class="col-grade"><p>Legislação e Ética</p></div>
+		<div class="col-grade"><p>Gestão Estratégica de Pessoas</p></div>
+		</div>
+		</div>		
+
+		
+		<div class="grade">
+		<div class="semestre">
+ 		05º Semestre </div>
+		<div class="mostrar">
+		<div class="col-grade"><p>Design Thinking</p></div>
+		<div class="col-grade"><p>Direito Aplicado à Administração</p></div>
+		<div class="col-grade"><p>Gestão da Qualidade</p></div>
+		<div class="col-grade"><p>Marketing Avançado</p></div>
+		<div class="col-grade"><p>Responsabilidade Social Corporativa</p></div>
+		<div class="col-grade"><p>Startup e Inovação</p></div>
+		</div>
+		</div>
+		
+		<div class="grade">
+		<div class="semestre">
+ 		06º Semestre </div>
+		<div class="mostrar">
+		<div class="col-grade"><p>Finanças Corporativas e Mercado de Capitais</p></div>
+		<div class="col-grade"><p>Gestão da Cadeia de Suprimentos</p></div>
+		<div class="col-grade"><p>Gestão de Custos</p></div>
+		<div class="col-grade"><p>Gestão de Projetos de Inovação</p></div>
+		<div class="col-grade"><p>Tomada de Decisão e Negociação</p></div>
+		</div>
+		</div>
+		
+		<div class="grade">
+		<div class="semestre">
+ 		07º Semestre </div>
+		<div class="mostrar">
+		<div class="col-grade"><p>Análise de Viabilidade de Projetos</p></div>
+		<div class="col-grade"><p>Estratégia Competitiva e Corporativa</p></div>
+		<div class="col-grade"><p>Jogos de Estratégias</p></div>
+		<div class="col-grade"><p>Trabalho de Conclusão de Curso 1 - TCC1</p></div>
+		</div>
+		</div>
+		
+		<div class="grade">
+		<div class="semestre">
+ 		08º Semestre </div>
+		<div class="mostrar">
+		<div class="col-grade"><p>Governança CorporativaGovernança Corporativa</p></div>
+		<div class="col-grade"><p>Negócios Internacionais</p></div>
+		<div class="col-grade"><p>Sistemas Integrados de Gestão</p></div>
+		<div class="col-grade"><p>Trabalho de Conclusão de Curso 2 - TCC2</p></div>
+		</div>
+		</div>
+		
+		
+ 
+	
+
+	
+	
+	
+</section>  
+
+
+
+
 
 
 <footer>

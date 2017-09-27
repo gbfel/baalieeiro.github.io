@@ -1,10 +1,11 @@
 <!DOCTYPE html>
 <html>
 <head> 
- 	<meta name="author" content="Gustavo Balieiro-1520138">
-	<meta name="author" content="Luan Millian-123456">
-
-<title>USF - Universidade São Francisco</title> 
+<!-- AUTOR:
+Gustavo Balieiro 1520138
+Luan Millian Gonçalves
+ DATA = 29/08/2017-->
+<title>USF</title> 
 <meta charset="utf-8"/>
 </head>
 	
@@ -12,20 +13,16 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
 	<!-- /MediaQuery -->
-	
-	<!-- CSS's -->
+
 	<link rel="stylesheet" type="text/css" href="css/estilo.css">
 	<link rel="stylesheet" href="css/base.css">
 	<link rel="stylesheet" type="text/css" href="css/styles.css" media="all" />
-    <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/menuresponsivo.css">
-    <!-- /CSS's -->
   
-    <!-- Java Script -->    
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>    
-     
-   
-	
+   	<link rel="stylesheet" href="css/cont-cursos.css">
+  
+    <!-- jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script> 
+    
 	<!-- Adicionar HEADER e FOOTER-->
 	<script>
 	$(function() {
@@ -35,9 +32,27 @@
 	</script>
 	<!-- /Adicionar HEADER e FOOTER-->
 	
+	<!-- Efeito de toggle mostrar e esconder -->
+	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8/jquery.min.js"></script>
+<!-- Script JQuery Toggle -->
+		<script>
+		$(document).ready(function()
+		{
+		$(".mostrar").hide();
+		$(".semestre").click(function()
+		{
+		$(this).next(".mostrar").slideToggle(600);
+		});
+		});
+		</script>
+<!-- Fim Script JQuery Toggle -->
+
+	
+	<!-- /Efeito de toggle mostrar e esconder -->
+	
 	<!-- /Java Script -->
 
-
+		
 
 <body>
 
@@ -45,85 +60,186 @@
 <header>
        
        <div class="addheader"></div>
-
-			<div class="flexslider">
-				<ul class="slides">
-
-				</ul>
-			</div>
-		  
+		
 </header> 
-<div class="container">
-			  
-     <div class="slider_container">
-		<div class="flexslider">
-	    	<ul class="slides">
-	    		
-	    		<li>
-	    		<a href="#"><img src="images/slider/slide1.jpg" alt="" title=""/></a>
-	    			<div class="caixa">
-						 <div class="titulo">
-						 <h2>Administração</h2><p>Find the perfect hairstyle a la Lauren Conrad for every type of festive fête.</p>
-						 </div>
-                	</div>
-	    		</li>
-	    	
-	    		<li>
-	    		<a href="#"><img src="images/slider/slide2.jpg" alt="" title=""/></a>
-	    			<div class="caixa">
-                    	 <div class="titulo">
-                    	 <h2>Nutrição</h2><p>The latest hairstyles and instructions on how to create them here. Total Beauty has your complete hairstyles guide</p></div>
-                		 </div>
-	    		</li>
-	    		
-	    	</ul>
-	  	</div>
-  	 </div>
-</div>  
 
-   
-<div class="section dimencao">
+ 
+ <div class="img_cursos">
+			<img src="img/cursos/enf.jpg">
+		</div>
+ <section> 
 
-	<div class="int">
-		<center><img src="img/usf.jpg" alt="USF"></center>
-		<h2><strong>FISIOTERAPIA</strong> </h2>
-		<p> nicialmente direcionada para o âmbito hospitalar e ambulatorial, visando à reabilitação de pacientes, a Fisioterapia levou algum tempo para conquistar outros setores. Atualmente, além da reabilitação, o profissional fisioterapeuta atua na promoção, prevenção e manutenção da saúde. O Curso de Fisioterapia da Universidade São Francisco se compromete com a formação do profissional generalista, ético, capacitado técnico-cientificamente e preparado para integrar uma equipe multiprofissional de maneira a contribuir com a saúde da população em suas várias áreas de atuação.</p>
+		<div class="conteudo_cur">
+		
+		
 
+	<p><h2><strong>SOBRE O CURSO</strong> </h2>
+	<div class="sepContainer2"></div>
+		<p>Inicialmente direcionada para o âmbito hospitalar e ambulatorial, visando à reabilitação de pacientes, a <b>Fisioterapia</b> levou algum tempo para conquistar outros setores. Atualmente, além da reabilitação, o profissional fisioterapeuta atua na promoção, prevenção e manutenção da saúde. O Curso de Fisioterapia da Universidade São Francisco se compromete com a formação do profissional generalista, ético, capacitado técnico-cientificamente e preparado para integrar uma equipe multiprofissional de maneira a contribuir com a saúde da população em suas várias áreas de atuação.</p>
+
+ 
 		<p>O aluno do Curso de Fisioterapia estará apto a atuar nos diferentes níveis de complexidade de atenção a saúde (primária, secundária e terciária) que compreendem as diversas especialidades: cardiologia, pneumologia, dermatologia, neurologia, reumatologia, ortopedia, traumatologia, pediatria, ginecologia, obstetrícia, oncologia, geriatria, saúde pública e coletiva, saúde do trabalhador (ergonomia).</p>
 
-		<p>As vivências profissionais, no curso de Fisioterapia da Universidade São Francisco, ocorrem desde os primeiros anos do curso, por meio de visitas à Clinica Escola de Fisioterapia e outras instituições conveniadas, projetos de extensão e demais ações com a comunidade. O Estágio Supervisionado e o Trabalho de Conclusão de Curso, alocados no último ano, completam a formação do aluno, habilitando-o a ser um Profissional Fisioterapeuta capacitado a reconhecer as necessidades das pessoas e a contribuir com a melhoria das condições de Saúde da População Brasileira.</p>
+		
+</p>
+	 
+	 <div class="info_curso">
+		 <div class="img_curso_desc">
+			<img src="img/cursos/relogio.png">
+		 </div>
+				<div class="text">
+					<p>
+						Periodo:<br>
+					 <b>Noturno</b>
+					 
+					</p>
+		 </div>
+	 </div>
+	 
+	 <div class="info_curso">
+		 <div class="img_curso_desc">
+			<img src="img/cursos/calendario.png">
+		 </div>
+				<div class="text">
+					<p>
+						Duração:<br>
+					 <b>6 semestres</b>
+					 
+					</p>
+				</div>
+		 </div>
+	 </div>
+	 		
+	 		
+	
+
 
 		
+		<div class="conteudo_cur">
+		
+		
 
-<p>Confira no arquivo em PDF a relação das disciplinas ofertadas para este curso e seu respectivo corpo docente:</p>
+	<p><h2><strong>QUERO MAIS INFORMAÇÕES</strong> </h2>
+	<div class="sepContainer2"></div>
+		
+</p>
+		<div class="form-grop">
+		<form class="maisinfo">
+			<label class="text-info">Nome*</label>
+			<input type="text" class="form-control" placeholder="Insira seu nome" required>
+		</form>
+		</div>
+		
+		<div class="form-grop">
+		<form class="maisinfo">
+			<label class="text-info">E-mail*</label>
+			<input type="email" class="form-control" placeholder="Insira seu e-mail" required>
+		</form>
+		</div>
+		
+		<div class="form-grop">
+		<form class="maisinfo">
+			<label class="text-info">Telefone*</label>
+			<input type="email" class="form-control" placeholder="(##) #####-####" required>
+		</form>
+		</div>
+		
+		<button type="button" class="bnt-info">Enviar</button>
 
-<a href ="pdf/grade_fis.pdf" target="_blank">Grade e Corpo Docente - ADM USF | Atualizado em 30/06/17 </a> 
+		</div>
+		
+				
+		<div class="grade">
+		<div class="semestre">
+ 		01º Semestre </div>
+		<div class="mostrar">
+		<div class="col-grade"><p>ANTROPOLOGIA DA SAÚDE</p></div>
+		<div class="col-grade"><p>BIOESTATÍSTICA APLICADA À SAÚDE</p></div>
+		<div class="col-grade"><p>EPIDEMIOLOGIA</p></div>
+		<div class="col-grade"><p>EXTENSÃO E OS PROCESSOS DE APRENDIZAGEM</p></div>
+		<div class="col-grade"><p>METODOLOGIA DA PESQUISA E BIOÉTICA</p></div>
+		<div class="col-grade"><p>PSICOLOGIA APLICADA À SAÚDE</p></div>
+		<div class="col-grade"><p>SAÚDE PÚBLICA</p></div>
+		</div>
+		</div>
+				
+		
+		<div class="grade">
+		<div class="semestre">
+ 		02º Semestre </div>
+		<div class="mostrar">
+		<div class="col-grade"><p>BIOLOGIA CELULAR E EMBRIOLOGIA</p></div>
+		<div class="col-grade"><p>BIOQUÍMICA</p></div>
+		<div class="col-grade"><p>GENÉTICA HUMANA</p></div>
+		<div class="col-grade"><p>HISTÓRIA EM SAÚDE E INSTRUMENTOS BÁSICOS PARA A ASSISTÊNCIA</p></div>
+		<div class="col-grade"><p>LEITURA E PRODUÇÃO DE TEXTOS</p></div>
+		<div class="col-grade"><p>MATEMÁTICA</p></div>
+		<div class="col-grade"><p>SAÚDE AMBIENTAL E VIGILÂNCIA SANITÁRIA</p></div>
+		</div>
+		</div>
+		
+	
+		<div class="grade">
+		<div class="semestre">
+ 		03º Semestre </div>
+		<div class="mostrar">
+		<div class="col-grade"><p>ANATOMIA HUMANA</p></div>
+		<div class="col-grade"><p>ESTUDO DO HOMEM CONTEMPORÂNEO</p></div>
+		<div class="col-grade"><p>FISIOLOGIA HUMANA</p></div>
+		<div class="col-grade"><p>HISTOLOGIA HUMANA</p></div>
+		<div class="col-grade"><p>PATOLOGIA GERAL</p></div>
+		</div>
+		</div>
+		
+		<div class="grade">
+		<div class="semestre">
+ 		04º Semestre </div>
+		<div class="mostrar">
+		<div class="col-grade"><p>EMPREENDEDORISMO</p></div>
+		<div class="col-grade"><p>FARMACOLOGIA GERAL</p></div>
+		<div class="col-grade"><p>FISIOLOGIA APLICADA À ENFERMAGEM</p></div>
+		<div class="col-grade"><p>MICROBIOLOGIA E IMUNOLOGIA</p></div>
+		<div class="col-grade"><p>PARASITOLOGIA</p></div>
+		<div class="col-grade"><p>PROCESSO NUTRICIONAL</p></div>
+		</div>
+		</div>		
 
 		
-	</div>
-
-</div>
-
-
-
-<div class="dimencao parceros">
+		<div class="grade">
+		<div class="semestre">
+ 		05º Semestre </div>
+		<div class="mostrar">
+		<div class="col-grade"><p>ENFERMAGEM EM SAÚDE MENTAL</p></div>
+		<div class="col-grade"><p>FUNDAMENTOS DE ENFERMAGEM</p></div>
+		<div class="col-grade"><p>PREVENÇÃO E CONTROLE DE INFECÇÃO HOSPITALAR</p></div>
+		<div class="col-grade"><p>PROCESSO DE ENFERMAGEM</p></div>
+		<div class="col-grade"><p>REFLEXÃO DO EXERCÍCIO PROFISSIONAL</p></div>
+		<div class="col-grade"><p>SEMIOLOGIA E SEMIOTÉCNICA APLICADA À ENFERMAGEM</p></div>
+		</div>
+		</div>
+		
+		<div class="grade">
+		<div class="semestre">
+ 		06º Semestre </div>
+		<div class="mostrar">
+		<div class="col-grade"><p>ESTÁGIO SUPERVISIONADO EM CUIDADOS BÁSICOS DE ENFERMAGEM</p></div>
+		<div class="col-grade"><p>PROGRAMAS DE SAÚDE</p></div>
+		<div class="col-grade"><p>SAÚDE DA CRIANÇA E DO ADOLESCENTE</p></div>
+		<div class="col-grade"><p>SAÚDE DA MULHER E DO RN</p></div>
+		<div class="col-grade"><p>Tomada de Decisão e Negociação</p></div>
+		</div>
+		</div>
+		
  
- <div class="parc-marg">
-  <h2><strong>PARCEIROS E DIFERENCIAIS:</strong></h2>
-  <div class="tam_desta"> <a href="http://www.creditouniversitario.com.br" target="_self"><img src="img/pravaler.jpg" alt="Parceiro Pravaler" title="Pravaler"/></a> </div>
-  
-  <div class="tam_desta"> <a href="http://sisfiesportal.mec.gov.br/" target="_self"><img src="img/fies.jpg" alt="Parceiro FIES" title="FIES"/></a> </div>
-  
-  <div class="tam_desta"> <a href="http://www.creditouniversitario.com.br" target="_self"><img src="img/pravaler.jpg" alt="Parceiro Pravaler" title="Pravaler"/></a> </div>
-  
-  <div class="tam_desta"> <a href="http://sisfiesportal.mec.gov.br/" target="_self"><img src="img/fies.jpg" alt="Parceiro FIES" title="FIES"/></a> </div>
-  
-  <div class="tam_desta"> <a href="http://www.creditouniversitario.com.br" target="_self"><img src="img/pravaler.jpg" alt="Parceiro Pravaler" title="Pravaler"/></a> </div>
-  
-  <div class="tam_desta"> <a href="http://sisfiesportal.mec.gov.br/" target="_self"><img src="img/fies.jpg" alt="Parceiro FIES" title="FIES"/></a> </div>
-  
-  </div>
-</div>
+	
+
+	
+	
+	
+</section>  
+
+
+
 
 
 
