@@ -120,5 +120,21 @@ small {
 	display: block;
 }
 
+.sep_ban {
+	color: red;
+	font-size: 90px;
+	text-align: center;
+	font-family: 'Gotham';
+	margin-top: -50px
+	
 
+}
+
+.lin {
+	width: 100%;
+	background-color:#006B2D;
+	height: 4px;
+	padding-top: 4px;
+	position: absolute;
+}
 
