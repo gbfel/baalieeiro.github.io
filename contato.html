@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+<head> 
+<!-- AUTOR:
+Gustavo Balieiro 1520138
+Luan Millian Gonçalves
+ DATA = 29/08/2017-->
+<title>USF</title> 
+<meta charset="utf-8"/>
+</head>
+	
+	<!-- MediaQuery -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+	<!-- /MediaQuery -->
+
+	<link rel="stylesheet" type="text/css" href="css/estilo.css">
+	<link rel="stylesheet" href="css/base.css">
+	<link rel="stylesheet" type="text/css" href="css/styles.css" media="all" />
+  
+   	<link rel="stylesheet" href="css/cont-form.css">
+  
+    <!-- jQuery -->
+    <script src="js/formatar-data-tel.js"></script> 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script> 
+    
+	<!-- Adicionar HEADER e FOOTER-->
+	<script>
+	$(function() {
+		$(".addheader").load("header.html");
+		$(".addfooter").load("footer.html");
+	})
+	</script>
+	<!-- /Adicionar HEADER e FOOTER-->
+	
+
+	<!-- /Java Script -->
+
+		
+
+<body>
+
+	
+<header>
+       
+       <div class="addheader"></div>
+		
+</header> 
+
+ 
+ <div class="map-holder">
+    <div class="map-container">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d235069.7929094297!2d-46.829684054135186!3d-22.98829557990736!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce5853243284bd%3A0xe1bf31feead639b1!2sUSF+-+Campus+Bragan%C3%A7a+Paulista!5e0!3m2!1spt-BR!2sbr!4v1506531340716" frameborder="0" style="border:0"></iframe>
+      <!-- end google map --> 
+    </div>
+    <!--map-container ends here--> 
+  </div>
+ <section> 
+		
+
+		
+		<div class="conteudo_cur">
+		
+		
+
+	<p><h2><strong>CONTATO</strong> </h2>
+	<div class="sepContainer2"></div>
+	
+		
+</p>
+	
+		<form class="maisinfo" id="form" name="form" method="post" action="?">
+		
+		<div class="form-grop">
+			<label class="text-info">Assunto*</label>
+			<select class="form-control" id="form_contato_assunto" required>
+			<option value="">Selecione um assunto</option>
+			<option value="1">Atendimento ao cliente</option>
+			<option value="2">Secretaria de Graduação</option>
+			<option value="3">Secretaria de Pós Graduação</option>
+			<option value="4">Financeiro</option>
+			<option value="5">Ouvidoria</option></select>		
+	 	 </div>
+		
+		<div class="form-grop">
+			<label class="text-info">E-mail*</label>
+			<input type="email" class="form-control" placeholder="Insira seu e-mail" required>	
+	 	 </div>
+			
+	 	<div class="form-grop">
+			<label class="text-info">RA</label>
+			<input type="text" class="form-control" placeholder="Insira seu RA">		
+		</div>
+		
+		<div class="form-grop">		
+			<label class="text-info">Telefone*</label>
+			<input name="telefone"  class="form-control"  type="text" id="telefone" placeholder="Insira seu Telefone" maxLength="14" onKeyPress="fone(this,document.form.data);return Apenas_Numeros(event);" required>	
+		</div>
+		
+		<div class="form-grop">		
+			<label class="text-info">Mensagem*</label>
+			<textarea class="text-control" placeholder="Escreva sua Mensagem" required></textarea>	
+		</div>
+		
+		
+		
+		<button type="button" class="bnt-info">Enviar</button>
+		</form>
+		
+		</div>
+		
+				
+		
+
+	
+	
+	
+</section>  
+
+
+
+
+
+
+<footer>
+	
+		<div class="addfooter"></div>
+         
+</footer>
+
+
+</body>
+
+
+
+</html>
