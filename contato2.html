@@ -1,0 +1,63 @@
+<script>
+
+function fone(obj,prox) {
+switch (obj.value.length) {
+	case 1:
+		obj.value = "(" + obj.value;
+		break;
+	case 3:
+		obj.value = obj.value + ")";
+		break;	
+	case 8:
+		obj.value = obj.value + "-";
+		break;	
+	case 14:
+		prox.focus();
+		break;
+}
+}
+function formata_data(obj,prox) {
+switch (obj.value.length) {
+	case 2:
+		obj.value = obj.value + "/";
+		break;
+	case 5:
+		obj.value = obj.value + "/";
+		break;
+	case 9:
+		prox.focus();
+		break;
+}
+}
+function Apenas_Numeros(caracter)
+{
+  var nTecla = 0;
+  if (document.all) {
+	  nTecla = caracter.keyCode;
+  } else {
+	  nTecla = caracter.which;
+  }
+  if ((nTecla> 47 && nTecla <58)
+  || nTecla == 8 || nTecla == 127
+  || nTecla == 0 || nTecla == 9  // 0 == Tab
+  || nTecla == 13) { // 13 == Enter
+	  return true;
+  } else {
+	  return false;
+  }
+}
+
+ 
+ 
+</script>
+Tel: <form id="form" name="form" method="post" action="?">
+<input name="telefone" type="text" id="telefone" maxLength="14" size="13" onKeyPress="fone(this,document.form.data);return Apenas_Numeros(event);">
+
+
+Data: 
+<input name="data" type="text" id="data" onKeyPress="formata_data(this,document.form.cpf);return Apenas_Numeros(event);" size="11" maxlength="11">
+Formato: MM/DD/AAAA<br>
+CPF: 
+<input name="cpf" type="text" class="imput" id="cpf" size="12" maxlength="11" onKeyPress="return Apenas_Numeros(event);" onBlur="validaCPF(this);">
+<br>
+<input type="submit" name="enviar" value="Enviar">

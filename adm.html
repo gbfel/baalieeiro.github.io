@@ -21,6 +21,7 @@ Luan Millian Gonçalves
    	<link rel="stylesheet" href="css/cont-cursos.css">
   
     <!-- jQuery -->
+    <script src="js/formatar-data-tel.js"></script> 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script> 
     
 	<!-- Adicionar HEADER e FOOTER-->
@@ -130,26 +131,22 @@ Luan Millian Gonçalves
 	<div class="sepContainer2"></div>
 		
 </p>
+		<form class="maisinfo" id="form" name="form" method="post" action="?">		
 		<div class="form-grop">
-		<form class="maisinfo">
 			<label class="text-info">Nome*</label>
 			<input type="text" class="form-control" placeholder="Insira seu nome" required>
-		</form>
 		</div>
 		
 		<div class="form-grop">
-		<form class="maisinfo">
 			<label class="text-info">E-mail*</label>
 			<input type="email" class="form-control" placeholder="Insira seu e-mail" required>
-		</form>
 		</div>
 		
 		<div class="form-grop">
-		<form class="maisinfo">
 			<label class="text-info">Telefone*</label>
-			<input type="email" class="form-control" placeholder="(##) #####-####" required>
-		</form>
+			<input name="telefone"  class="form-control"  type="text" id="telefone" placeholder="(##) ####-####" maxLength="14" onKeyPress="fone(this,document.form.data);return Apenas_Numeros(event);" required>	
 		</div>
+	</form>
 		
 		<button type="button" class="bnt-info">Enviar</button>
 
